@@ -48,7 +48,7 @@ export const ListMarket = () => {
 			const dateMatch = !filterDate || product.addedDate === filterDate;
 			return nameMatch && brandMatch && priceMatch && categoryMatch && dateMatch;
 		});
-	}, [, activeProducts, filterName, filterBrand, filterPrice, filterCategory, filterDate]);
+	}, [activeProducts, filterName, filterBrand, filterPrice, filterCategory, filterDate]);
 
 	const [displayTotal, setDisplayTotal] = useState(0)
 
